@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Rebond Grotesque'; /* Name your font family */
+  src: url('fonts/Rebond Grotesque.otf'); /* Locate the .ttf file within your directory*/
+}
+
+body {
+  background-color: #F2F1EE;
+  color: #201E18;
+  font-family: "Rebond Grotesque";
+  padding: 70px;
+  padding-top: 0px;
+
+}
+
+.logoLiquid{
+  width: 100px;
+  height: 100px;
+}
+
+
+div.scroll-container {
+  background-color: #F2F1EE;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+
+  position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;  /* follow the parent's edges */
+  /*outline: thin dashed green; */          
+
+}
+
+div.scroll-container img {
+  padding: 0px;
+  height: 100%;
+}
+
+div.scroll-container video {
+  padding: 0px;
+  height: 100%;
+}
+
+
+.fullScreen {
+  display: contents; 
+  width: 100%;          
+  position: relative;   
+  overflow-y: hidden;
+}
+
+
+
+.aspectwrapper {
+  display: inline-block;
+  width: 100%;          
+  position: relative;    
+}
+
+.aspectwrapper::after {
+  padding-top: 60%; /* percentage of containing block _width_ */
+  display: block;
+  content: '';
+}

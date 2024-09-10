@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+	<img class="logoLiquid" src="./media/logoLiquid.gif" alt="liquid logo">
+</header>
+
+<p id="textOrientation">Rotate your phone horizontally and scroll :)</p>
+<div id="slider" class="aspectwrapper">
+	<div class="scroll-container">
+	  <img src="./media/Issue1_a.png" alt="Intro">
+	  <img src="./media/Issue1_b.png" alt="Inner Elder">
+	  <img src="./media/Issue1_c.png" alt="The Encyclopedia of Invisibility and Six Thousand Years">
+	  <video loop controls>
+		  <source src="./media/IMG_1158.webm" type="video/webm">
+		Your browser does not support the video tag.
+	  </video>
+	  <img src="./media/Issue1_d.png" alt="Tavares Strachan artistic practice">
+	  <video loop controls>
+		  <source src="./media/IMG_1165.webm" type="video/webm">
+		Your browser does not support the video tag.
+	  </video>
+
+	  <img src="./media/Issue1_e.png" alt="Northern Lights">
+	  
+
+	  <video loop controls>
+		  <source src="./media/IMG_1141.webm" type="video/webm">
+		Your browser does not support the video tag.
+	  </video>
+
+	   <video loop controls>
+		  <source src="./media/IMG_1143.webm" type="video/webm">
+		Your browser does not support the video tag.
+	  </video>
+
+	  <video loop controls>
+		  <source src="./media/IMG_1146.webm" type="video/webm">
+		Your browser does not support the video tag.
+	  </video>
+
+
+	  <img src="./media/Issue1_f.png" alt="Northern Lights">
+	  <img src="./media/Issue1_g.png" alt="Northern Lights">
+	  <img src="./media/Issue1_h.png" alt="Northern Lights">
+	  <img src="./media/Issue1_i.png" alt="Northern Lights">
+	  <img src="./media/Issue1_j.png" alt="Northern Lights">
+	</div>
+</div>
+
+
+
+<p>+ Info</p>
+<p>IG: <a href="https://www.instagram.com/liquid.exp.media">@liquid.exp.media</a></p>
+
+<script type="text/javascript">
+	const portrait = window.matchMedia("(orientation: portrait)").matches;
+	
+
+	window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
+    const portrait = e.matches;
+
+    if (portrait) {
+        //is portrait
+         document.getElementById("textOrientation").style.display = 'block';
+
+        document.getElementById("slider").classList.remove('fullScreen');
+        document.getElementById("slider").classList.add('aspectwrapper');
+
+    } else {
+        // landscape
+        document.getElementById("textOrientation").style.display = 'none';
+
+        document.getElementById("slider").classList.remove('aspectwrapper');
+        document.getElementById("slider").classList.add('fullScreen');
+		
+
+    }
+});
+
+</script>
+
+</body>
+</html>
