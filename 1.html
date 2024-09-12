@@ -2,15 +2,20 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
 
 <header>
 	<img class="logoLiquid" src="./media/logoLiquid.gif" alt="liquid logo">
+
+	
+	<a href="https://www.instagram.com/liquid.exp.media"><img class="info" src="./media/ig_icon.png" alt="IG Icon"></a>
+
+
 </header>
 
-<p id="textOrientation">Rotate your phone horizontally and scroll :)</p>
 <div id="slider" class="aspectwrapper">
 	<div class="scroll-container">
 	  <img src="./media/Issue1_a.png" alt="Intro">
@@ -55,35 +60,6 @@
 
 
 
-<p>+ Info</p>
-<p>IG: <a href="https://www.instagram.com/liquid.exp.media">@liquid.exp.media</a></p>
-
-<script type="text/javascript">
-	const portrait = window.matchMedia("(orientation: portrait)").matches;
-	
-
-	window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
-    const portrait = e.matches;
-
-    if (portrait) {
-        //is portrait
-         document.getElementById("textOrientation").style.display = 'block';
-
-        document.getElementById("slider").classList.remove('fullScreen');
-        document.getElementById("slider").classList.add('aspectwrapper');
-
-    } else {
-        // landscape
-        document.getElementById("textOrientation").style.display = 'none';
-
-        document.getElementById("slider").classList.remove('aspectwrapper');
-        document.getElementById("slider").classList.add('fullScreen');
-		
-
-    }
-});
-
-</script>
 
 </body>
 </html>
