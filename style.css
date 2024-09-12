@@ -13,15 +13,17 @@ body {
 }
 
 .logoLiquid{
-  width: 100px;
-  height: 100px;
-  float: left;
+      width: 100px;
+    height: 100px;
+    float: left;
+    position: absolute;
+    top: 0px;
 }
 
 .info{
-    position: absolute;
+       position: absolute;
     right: 5%;
-    top: 41px;
+    top: 31px;
     width: 30px;
     height: 30px;
 }
@@ -65,9 +67,11 @@ div.scroll-container video {
   width: 100%;          
   /*position: relative;   */
   position: fixed;
-  height: 90%;
+  height: 85%;
   left: 0px;
+  top: 10%;
   bottom: 0px; 
+  margin-top: 5%;
 }
 
 /*.aspectwrapper::after {
