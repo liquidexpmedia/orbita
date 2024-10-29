@@ -14,15 +14,17 @@ body {
 }
 
 .logoLiquid{
-      width: 100px;
+      
+    width: 100px;
     height: 100px;
     float: left;
     position: absolute;
     top: 0px;
+    z-index: -1;
 }
 
 .info{
-       position: absolute;
+    position: absolute;
     right: 5%;
     top: 31px;
     width: 30px;
@@ -88,17 +90,27 @@ div.scroll-container video {
   margin-top: -100px;
   background: #f3efee;
   z-index: 20;*/
+    position: fixed;
+    padding: 30px;
+    width: 325px;
+    height: 600px;
+    background: #f3efee;
+    z-index: 20;
+    top: calc(50% - 300px);
+    left: calc(50% - 193px);
+    overflow-x: hidden;
+    overflow-y: scroll;
 
-  display: none;
-  position: fixed;
-  padding: 30px;
-  width: 330px;
-  height: 400px;
-  background: #f3efee;
-  z-index: 20;
+}
 
-  top: calc(50% - 200px); 
-  left: calc(50% - 200px); 
+
+
+
+.popup-text  {
+
+  height: 85%;
+    width: 100%;
+    overflow-y: scroll;
 }
 
 #popup2:after {
