@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Rebond Grotesque'; /* Name your font family */
+  src: url('fonts/Rebond Grotesque.otf'); /* Locate the .ttf file within your directory*/
+}
+
+body {
+  background-color: #F2F1EE;
+  color: #201E18;
+  font-family: "Rebond Grotesque";
+  padding: 12px;
+  padding-top: 0px;
+  overflow: hidden;
+
+}
+
+.logoLiquid{
+      
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+.info{
+    position: absolute;
+    right: 5%;
+    top: 31px;
+    width: 30px;
+    height: 30px;
+}
+
+
+div.scroll-container {
+  background-color: #201E18;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;  /* follow the parent's edges */
+  /*outline: thin dashed green; */          
+
+}
+
+div.scroll-container img {
+  padding: 0px;
+  height: 100%;
+}
+
+div.scroll-container video {
+  padding: 0px;
+  height: 100%;
+}
+
+
+.fullScreen {
+  display: contents; 
+  width: 100%;          
+  position: relative;   
+  overflow-y: hidden;
+}
+
+.btn {
+  border: none;
+  background-color: #201E18;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  position: fixed; 
+  z-index: 1;
+  right: 3%;
+}
+
+.btn:hover {background: #201E18;}
+
+.default {color: #F2F1EE;}
+
+.popup {
+
+  display: none;
+  position: fixed;
+  padding: 30px;
+  width: 330px;
+  height: 500px;
+  background: #f3efee;
+  z-index: 20;
+
+  top: calc(50% - 350px); 
+  left: calc(50% - 200px); 
+}
+
+#popup2:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: -2;
+}
+
+#popup2:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #f3efee;
+  z-index: -1;
+}
+
+.aspectwrapper {
+  /*display: inline-block;
+  width: 100%;          
+  position: fixed;
+  height: 85%;
+  left: 0px;
+  top: 5%;
+  bottom: 0px; 
+  margin-top: 10%;*/
+
+  display: contents;
+  width: 100%;          
+  position: fixed;
+
+
+}
+
+/*.aspectwrapper::after {
+  padding-top: 60%;
+  display: block;
+  content: '';
+}*/
